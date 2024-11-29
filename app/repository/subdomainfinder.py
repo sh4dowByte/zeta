@@ -37,6 +37,7 @@ class SubdomainFinder:
         7. Handles exceptions and adds error messages to the tree if any occur.
         """
         tree = Tree(title)
+        links = []
 
         try:
             with sync_playwright() as p:
