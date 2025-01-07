@@ -27,6 +27,53 @@
 
 **Note**: Zeta is intended for educational purposes and must be used responsibly in compliance with cybersecurity laws and ethical guidelines.
 
+
+## ⚙️ Installation
+
+### Using pipx (Recommended)
+`pipx` is a tool to install and run Python applications in isolated environments. Follow these steps to install Zeta:
+
+1. Install pipx:
+   ```bash
+   sudo apt install pipx
+   pipx ensurepath
+   ```
+
+2. Clone the Zeta repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/zeta.git
+   cd zeta
+   ```
+
+3. Install Zeta using pipx:
+   ```bash
+   pipx install .
+   ```
+
+### Alternative Setup - Using Alias
+If you prefer not to use `pipx`, you can set up an alias to run `zeta.py` directly from your terminal.
+
+1. Clone the Zeta repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/zeta.git
+   cd zeta
+   ```
+
+2. Install the required dependencies from `requirements.txt`:
+   ```bash
+   python3 -m pip install -r requirements.txt
+   ```
+
+3. Open your terminal and add the following alias to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
+   ```bash
+   alias zeta='python3 ~/Pentest/zeta/zeta.py'
+   ```
+
+4. After adding the alias, run `source ~/.bashrc` (or `source ~/.zshrc` for zsh) to reload your shell configuration.
+
+Now, you can run `zeta` directly from your terminal!
+
+
 ## 📚 Reference Data
 
 - **[crt.sh](https://crt.sh/)**: A Certificate Transparency log search engine providing visibility into SSL/TLS certificates. It helps in discovering subdomains through certificates issued to a domain.
