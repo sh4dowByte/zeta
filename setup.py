@@ -9,10 +9,8 @@ setup(
     install_requires=[
         "rich",
         "requests",
-        "bs4",
+        "playwright",
         "lxml",
-        "pyopenssl",
-        "pyyaml"
     ],
     entry_points={
         'console_scripts': [
